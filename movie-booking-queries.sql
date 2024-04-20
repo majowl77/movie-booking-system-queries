@@ -1,4 +1,4 @@
-w---------------- Creating Tables -------------- 
+---------------- Creating Tables -------------- 
 CREATE TABLE customer(
 	customer_id SERIAL PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
@@ -204,7 +204,7 @@ VALUES
   ((SELECT movie_id FROM movie WHERE movie_name = 'Se7en'), '1995-09-22', 'Morgan Freeman, Brad Pitt, Kevin Spacey', 8.6, 'Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.'),
   ((SELECT movie_id FROM movie WHERE movie_name = 'Dunkirk'), '2017-07-21', 'Fionn Whitehead, Barry Keoghan, Mark Rylance', 7.9, 'Allied soldiers from Belgium, the British Empire, and France are surrounded by the German Army and evacuated during a fierce battle in World War II.'),
   ((SELECT movie_id FROM movie WHERE movie_name = 'The Dark Knight'), '2008-07-18', 'Christian Bale, Heath Ledger, Aaron Eckhart', 9, 'When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.');
-  -- 
+   
 
 INSERT INTO cinema (address_id, name)
 VALUES ((SELECT address_id FROM address WHERE city_name = 'Riyadh' AND zip_code='12262'), 'Riyadh Gallery 9'),
